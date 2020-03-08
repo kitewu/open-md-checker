@@ -1,10 +1,10 @@
 {
-  "name": "open-md-lint",
-  "version": "0.0.4",
+  "name": "open-md-checker",
+  "version": "0.0.2",
   "description": "Open source markdown lint",
   "main": "./lib/index.js",
   "bin": {
-    "open-md-lint": "./lib/index.js"
+    "open-md": "./lib/index.js"
   },
   "scripts": {
     "build": "tsc"
@@ -21,6 +21,7 @@
   "devDependencies": {
     "@types/node": "^12.12.29",
     "tslint": "^5.0.0",
+    "tslib": "^1.11.1",
     "typescript": "^3.0.0"
   },
   "repository": {

@@ -8,7 +8,7 @@ const deglob = require('deglob');
 // tslint:disable-next-line: no-var-requires
 const gutil = require('gulp-util');
 
-const moduleName = 'open-md-lint';
+const moduleName = 'open-md-checker';
 
 interface Config {
   requires?: string;

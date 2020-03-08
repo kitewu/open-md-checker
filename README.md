@@ -1,27 +1,17 @@
-# open-md-lint
+# open-md-checker
 
-`open-md-lint` is an open source module for markdown file format checking.
+`open-md-checker` is an open source module for markdown file format checking.
 
 ## Getting start
 
 ### Install
 
-`npm i open-md-lint`
+`npm i -g open-md-checker`
 
-### Demo
-
-package.json
-
-```json
-{
-  "scripts": {
-    "md-lint": "open-md-lint"
-  }
-}
-```
+### Run
 
 ```shell
-# npm run md-lint
+# open-md-checker
 ```
 
 ## Docs
@@ -60,11 +50,11 @@ interface Config {
 
 #### Customer configuration
 
-Note: In order to facilitate the user to integrate the configuration into the package.json file, after loading the configuration file, the configuration will be read from the `open-md-lint` field, so the specific configuration should be included in the `open-md-lint` field, for example:
+Note: In order to facilitate the user to integrate the configuration into the package.json file, after loading the configuration file, the configuration will be read from the `open-md-checker` field, so the specific configuration should be included in the `open-md-checker` field, for example:
 
 ```json
 {
-  "open-md-lint": {
+  "open-md-checker": {
     "requires": "./requires.js",
     "patterns": [ "**/*.md" ],
     "options": {
@@ -78,11 +68,11 @@ Note: In order to facilitate the user to integrate the configuration into the pa
 You can place the configuration anywhere and specify the file location by setting the `MD_LINT_CONFIG_PATH` environment variable. E.g
 
 ```bash
-# export MD_LINT_CONFIG_PATH=./open-md-lint.json
-# npm run md-lint
+# export MD_LINT_CONFIG_PATH=./open-md-checker.json
+# open-md-checker
 ```
 
-#### Customer md-lint rules
+#### Customer open-md-checker rules
 
 You can specify which checks are enabled. This option requires a js file, for example:
 
