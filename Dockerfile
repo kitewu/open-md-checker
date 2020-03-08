@@ -1,8 +1,11 @@
 FROM node:10
 
 RUN npm i -g open-md-checker && npm i -g tslib
-RUN mkdir /workspace
 
+RUN mkdir /workspace
 WORKDIR /workspace
 
-CMD ["open-md-checker"]
+ADD entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
