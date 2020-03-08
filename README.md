@@ -65,7 +65,7 @@ Note: In order to facilitate the user to integrate the configuration into the pa
 }
 ```
 
-You can place the configuration anywhere and specify the file location by setting the `MD_LINT_CONFIG_PATH` environment variable. E.g
+The configuration file can be placed in any path of the project and specified by `MD_LINT_CONFIG_PATH` environment variable, for example:
 
 ```bash
 # export MD_LINT_CONFIG_PATH=./open-md-checker.json
@@ -83,7 +83,7 @@ module.exports = [
 ]
 ```
 
-The js file can be placed in any location and specified by the `requires` field in the configuration. If it is a relative path, the current path is automatically added to form an absolute path.
+The js file can be placed in any path of the project and specified by the `requires` field in the configuration.
 
 ### docker
 
