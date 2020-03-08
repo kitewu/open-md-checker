@@ -1,6 +1,6 @@
 {
   "name": "open-md-checker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Open source markdown lint",
   "main": "./lib/index.js",
   "bin": {
