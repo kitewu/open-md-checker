@@ -1,7 +1,5 @@
 # open-md-lint
 
-## Description
-
 `open-md-lint` is an open source module for markdown file format checking.
 
 ## Getting start
@@ -62,7 +60,7 @@ interface Config {
 
 #### Customer configuration
 
-Note: In order to facilitate the user to integrate the configuration into the package.json file, after loading the configuration file, the configuration will be read from the 'open-md-lint' field, so the specific configuration should be included in the 'open-md-lint' field, for example:
+Note: In order to facilitate the user to integrate the configuration into the package.json file, after loading the configuration file, the configuration will be read from the `open-md-lint` field, so the specific configuration should be included in the `open-md-lint` field, for example:
 
 ```json
 {
@@ -77,7 +75,7 @@ Note: In order to facilitate the user to integrate the configuration into the pa
 }
 ```
 
-User can place the configuration anywhere and specify the file location by setting the `MD_LINT_CONFIG_PATH` environment variable. E.g
+You can place the configuration anywhere and specify the file location by setting the `MD_LINT_CONFIG_PATH` environment variable. E.g
 
 ```bash
 # export MD_LINT_CONFIG_PATH=./open-md-lint.json
@@ -86,7 +84,7 @@ User can place the configuration anywhere and specify the file location by setti
 
 #### Customer md-lint rules
 
-User can specify which checks are enabled. This option requires a js file, for example:
+You can specify which checks are enabled. This option requires a js file, for example:
 
 ```javascript
 module.exports = [

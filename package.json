@@ -1,6 +1,6 @@
 {
   "name": "open-md-lint",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Open source markdown lint",
   "main": "./lib/index.js",
   "bin": {
