@@ -84,3 +84,17 @@ module.exports = [
 ```
 
 The js file can be placed in any location and specified by the `requires` field in the configuration. If it is a relative path, the current path is automatically added to form an absolute path.
+
+### docker
+
+#### build
+
+```bash
+# docker build -t open-md-checker .
+```
+
+#### run
+
+```bash
+# docker run -it -v src/path:/github/workspace open-md-checker
+```
